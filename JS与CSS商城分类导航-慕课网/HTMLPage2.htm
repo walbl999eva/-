@@ -1,247 +1,242 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <title></title>
     <style type="text/css">
-       <style type="text/css">
-        body
-        {
-            padding: 0;
-            font-size: 10pt;
-            behavior:url(css/csshover.htc);
-        }
-        .topmenu
-        {
-            display: block;
-            width: 220px;
-            border: 2px solid #e4393c;
-            margin: 0;
-            padding: 0;
-        }
-        .toptitle
-        {
-            height: 40px;
-            line-height: 40px;
-            text-align: left;
-            font-size: 11pt;
-            font-weight: bold;
-            color: White;
-            background: #e4393c;
-            padding-left: 20px;
-        }
-        .topmenu li
-        {
-            height: 30px;
-            line-height: 30px;
-            font-size: 11pt;
-            list-style-type: none;
-            text-align: left;
-            padding-left: 8px;
-            z-index: 3;
-            background-image: url(1.png);
-            background-repeat: no-repeat;
-            background-position: right;
-        }
-        .topmenu li a
-        {
-            text-decoration: none;
-            color: #313131;
-        }
-        .topmenu li a:hover
-        {
-            text-decoration: underline;
-            font-weight: bold;
-            color: #e4393c;
-        }
-        .topmenu .lihover /*鼠标移动到上面时，应用的样式*/
-        {
-            border: 1px solid #DDD;
-            border-right: 0;
-            box-shadow: 0 0 8px #DDD;
-            -moz-box-shadow: 0 0 8px #DDD;
-            -webkit-box-shadow: 0 0 8px #DDD;
-            background-image: none;
-            height:60px;
-            border-left:4px solid #e4393c;
-            
-            
-        }
-         .topmenu .lihover .submenu /*悬浮层*/
-        {
-            display: block;
-        }
-        
-        .topmenu .lihover span /*白色小方框*/
-        {
-            background: white;
-            display: inline-block;
-            z-index: 20;
-            width: 20px;
-            height: 60px;
-            float: right;
-            position: relative;
-        }
-        
-      
-      .topmenu li b
-       {
-           display:none;
-           
-        }
-      
-        .topmenu .lihover b
-        {
-            display:block;
-            height:30px;
-            line-height:30px;
-            font-weight:normal;
-            font-size:10pt;
-        }
-     
-        .submenu
-        {
-            display: none;
-            width: 715px;
-            left: 220px;
-            position: absolute;
-            top: 40px;
-            border: 1px solid #DDD;
-            z-index: 4;
-            background: white;
-            box-shadow: 0 0 8px #DDD;
-            -moz-box-shadow: 0 0 8px #DDD;
-            -webkit-box-shadow: 0 0 8px #DDD;
-        }
-        .leftdiv
-        {
-            float: left;
-            width: 490px;
-            margin: 5px;
-        }
-        .rightdiv
-        {
-            float: left;
-            width: 200px;
-            margin: 5px;
-        }
-       
-        .leftdiv dl
-        {
-            display: block;
-            border-bottom: 1px solid #EEE;
-            padding-bottom: 6px;
-            overflow: hidden;
-        }
-        .leftdiv dl dt
-        {
-            display: block;
-            float: left;
-            width: 60px;
-            text-align: right;
-            height: 22px;
-            line-height: 22px;
-            padding-right: 6px;
-        }
-        
-        .leftdiv dl dt a
-        {
-            color: #e4393c;
-            font-weight: bold;
-            text-decoration: underline;
-            font-size: 10pt;
-        }
-        .leftdiv dl dd
-        {
-            display: block;
-            overflow: hidden;
-        }
-        .leftdiv dl dd a
-        {
-            display: block;
-            float: left;
-            border-left: 1px solid #CCC;
-            color: #737373;
-            font-size: 9pt;
-            padding: 0 8px;
-            height: 14px;
-            line-height: 14px;
-            margin: 4px 0;
-        }
-        
-        .rightdiv dl dd
-        {
-            margin: 3px 0;
-        }
-        
-        .rightdiv dl dt
-        {
-            color: #e4393c;
-            font-weight: bold;
-            font-size: 10pt;
-        }
-        
-        .rightdiv dl dd a
-        {
-            font-size: 9pt;
-            color: #737373;
-            line-height: 22px;
-        }
-        .rightdiv dl dd a:hover
-        {
-            color: #737373;
-            font-weight: normal;
-        }
-      
-      .rightPic
-      {
-          position:relative;
-          right:-35px;
-          bottom:-30px;
-        
-          }
+    <style type="text/css">body {
+        padding: 0;
+        font-size: 10pt;
+        behavior: url(css/csshover.htc);
+    }
+
+    .topmenu {
+        display: block;
+        width: 220px;
+        border: 2px solid #e4393c;
+        margin: 0;
+        padding: 0;
+    }
+
+    .toptitle {
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 11pt;
+        font-weight: bold;
+        color: White;
+        background: #e4393c;
+        padding-left: 20px;
+    }
+
+    .topmenu li {
+        height: 30px;
+        line-height: 30px;
+        font-size: 11pt;
+        list-style-type: none;
+        text-align: left;
+        padding-left: 8px;
+        z-index: 3;
+        background-image: url(1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .topmenu li a {
+        text-decoration: none;
+        color: #313131;
+    }
+
+    .topmenu li a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        color: #e4393c;
+    }
+
+    .topmenu .lihover
+    /*鼠标移动到上面时，应用的样式*/
+
+    {
+        border: 1px solid #DDD;
+        border-right: 0;
+        box-shadow: 0 0 8px #DDD;
+        -moz-box-shadow: 0 0 8px #DDD;
+        -webkit-box-shadow: 0 0 8px #DDD;
+        background-image: none;
+        height: 60px;
+        border-left: 4px solid #e4393c;
+    }
+
+    .topmenu .lihover .submenu
+    /*悬浮层*/
+
+    {
+        display: block;
+    }
+
+    .topmenu .lihover span
+    /*白色小方框*/
+
+    {
+        background: white;
+        display: inline-block;
+        z-index: 20;
+        width: 20px;
+        height: 60px;
+        float: right;
+        position: relative;
+    }
+
+
+    .topmenu li b {
+        display: none;
+    }
+
+    .topmenu .lihover b {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        font-weight: normal;
+        font-size: 10pt;
+    }
+
+    .submenu {
+        display: none;
+        width: 715px;
+        left: 220px;
+        position: absolute;
+        top: 40px;
+        border: 1px solid #DDD;
+        z-index: 4;
+        background: white;
+        box-shadow: 0 0 8px #DDD;
+        -moz-box-shadow: 0 0 8px #DDD;
+        -webkit-box-shadow: 0 0 8px #DDD;
+    }
+
+    .leftdiv {
+        float: left;
+        width: 490px;
+        margin: 5px;
+    }
+
+    .rightdiv {
+        float: left;
+        width: 200px;
+        margin: 5px;
+    }
+
+    .leftdiv dl {
+        display: block;
+        border-bottom: 1px solid #EEE;
+        padding-bottom: 6px;
+        overflow: hidden;
+    }
+
+    .leftdiv dl dt {
+        display: block;
+        float: left;
+        width: 60px;
+        text-align: right;
+        height: 22px;
+        line-height: 22px;
+        padding-right: 6px;
+    }
+
+    .leftdiv dl dt a {
+        color: #e4393c;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 10pt;
+    }
+
+    .leftdiv dl dd {
+        display: block;
+        overflow: hidden;
+    }
+
+    .leftdiv dl dd a {
+        display: block;
+        float: left;
+        border-left: 1px solid #CCC;
+        color: #737373;
+        font-size: 9pt;
+        padding: 0 8px;
+        height: 14px;
+        line-height: 14px;
+        margin: 4px 0;
+    }
+
+    .rightdiv dl dd {
+        margin: 3px 0;
+    }
+
+    .rightdiv dl dt {
+        color: #e4393c;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+
+    .rightdiv dl dd a {
+        font-size: 9pt;
+        color: #737373;
+        line-height: 22px;
+    }
+
+    .rightdiv dl dd a:hover {
+        color: #737373;
+        font-weight: normal;
+    }
+
+    .rightPic {
+        position: relative;
+        right: -35px;
+        bottom: -30px;
+    }
     </style>
 </head>
+
 <body>
     <script type="text/javascript">
-        window.onload = function () {
-            var Lis = document.getElementsByTagName("li");
-            for (i = 0; i < Lis.length; i++) {
-                //为每个li绑定固定i的值，赋予Lis[i].i
-                Lis[i].i = i;
-                Lis[i].onmouseover = function () {
-                    this.className = "lihover";
-                    
-                    //h0为鼠标滑过的li之上的几个li的高度，外加标题div的高度
-                    //此处直接使用i，会因为for循环递包使i为固定最大值，所以应使用每个li绑定固定i的值
-                    var h0 = this.i * 30 + 42;
-                    //y为submenu的高度
-                    var y = this.getElementsByTagName("div")[0].offsetHeight;
-                    //h为submenu距离窗口的top值加上自身的高度
-                    var h = this.getElementsByTagName("div")[0].style.top + y;
-                    
-                    //当h<h0，即submenu的高度和位置与this(li)不再一条线上，所以使submenu的top值为h0即可重新对齐
-                    if (h < h0) {
-                        this.getElementsByTagName("div")[0].style.top = h0 + "px";
-                    }
-                    
-                    //当submenu的高度太高，内容太多，使其top值缩减为3px，550px为多数窗口高度底限
-                    if (y > 550) {
-                        this.getElementsByTagName("div")[0].style.top = "3px";
-                    }
+    window.onload = function() {
+        var Lis = document.getElementsByTagName("li");
+        for (i = 0; i < Lis.length; i++) {
+            //为每个li绑定固定i的值，赋予Lis[i].i
+            Lis[i].i = i;
+            Lis[i].onmouseover = function() {
+                this.className = "lihover";
+
+                //h0为鼠标滑过的li之上的几个li的高度，外加标题div的高度
+                //此处直接使用i，会因为for循环递包使i为固定最大值，所以应使用每个li绑定固定i的值
+                var h0 = this.i * 30 + 42;
+                //y为submenu的高度
+                var y = this.getElementsByTagName("div")[0].offsetHeight;
+                //h为submenu距离窗口的top值加上自身的高度
+                var h = this.getElementsByTagName("div")[0].style.top + y;
+
+                //当h<h0，即submenu的高度和位置与this(li)不再一条线上，所以使submenu的top值为h0即可重新对齐
+                if (h < h0) {
+                    this.getElementsByTagName("div")[0].style.top = h0 + "px";
                 }
 
-                Lis[i].onmouseout = function () {
-                    this.className = "";
+                //当submenu的高度太高，内容太多，使其top值缩减为3px，550px为多数窗口高度底限
+                if (y > 550) {
+                    this.getElementsByTagName("div")[0].style.top = "3px";
                 }
             }
 
+            Lis[i].onmouseout = function() {
+                this.className = "";
+            }
         }
+
+    }
     </script>
     <ul class="topmenu">
         <div class="toptitle">
             全部商品分类
         </div>
-        <li><a href="#">图书、音像、数字商品</a><span></span> 
+        <li><a href="#">图书、音像、数字商品</a><span></span>
             <b><a href="#">文学</a> <a href="#">经管</a>
             <a href="#">畅读VIP</a></b>
             <div class="submenu">
@@ -269,8 +264,7 @@
                     <dl>
                         <dt><a href="#">文艺</a></dt>
                         <dd>
-                            <a href="#">小说</a> <a href="#">文学</a> <a href="#">青春文学</a> <a href="#">传记</a> <a
-                                href="#">艺术</a>
+                            <a href="#">小说</a> <a href="#">文学</a> <a href="#">青春文学</a> <a href="#">传记</a> <a href="#">艺术</a>
                         </dd>
                     </dl>
                     <dl>
@@ -368,7 +362,7 @@
                     <dl>
                         <dt><a href="#">大 家 电</a></dt>
                         <dd>
-                            <a href="#">平板电视</a> <a href="#">空调</a> <a href="#">冰箱</a> <a href="#">洗衣机</a> 
+                            <a href="#">平板电视</a> <a href="#">空调</a> <a href="#">冰箱</a> <a href="#">洗衣机</a>
                         </dd>
                     </dl>
                 </div>
@@ -401,8 +395,7 @@
                         <dt><a href="#">手机配件</a></dt>
                         <dd>
                             <a href="#">电池</a> <a href="#">蓝牙耳机</a> <a href="#">充电器/数据线</a> <a href="#">手机耳机</a>
-                            <a href="#">贴膜</a> <a href="#">存储卡</a> <a href="#">保护套</a> <a href="#">车载</a> <a
-                                href="#">iPhone配件</a> <a href="#">创意配件</a> <a href="#">便携/无线音箱</a> <a href="#">手机饰品</a>
+                            <a href="#">贴膜</a> <a href="#">存储卡</a> <a href="#">保护套</a> <a href="#">车载</a> <a href="#">iPhone配件</a> <a href="#">创意配件</a> <a href="#">便携/无线音箱</a> <a href="#">手机饰品</a>
                         </dd>
                     </dl>
                     <dl>
@@ -470,8 +463,7 @@
                     <dl>
                         <dt><a href="#">外设产品</a></dt>
                         <dd>
-                            <a href="#">鼠标</a> <a href="#">键盘</a> <a href="#">游戏设备</a> <a href="#">U盘</a> <a
-                                href="#">移动硬盘</a> <a href="#">鼠标垫</a> <a href="#">摄像头</a> <a href="#">线缆</a>
+                            <a href="#">鼠标</a> <a href="#">键盘</a> <a href="#">游戏设备</a> <a href="#">U盘</a> <a href="#">移动硬盘</a> <a href="#">鼠标垫</a> <a href="#">摄像头</a> <a href="#">线缆</a>
                             <a href="#">电玩</a> <a href="#">手写板</a> <a href="#">外置盒</a> <a href="#">电脑工具</a>
                             <a href="#">电脑清洁</a> <a href="#">UPS</a> <a href="#">插座</a>
                         </dd>
@@ -533,8 +525,7 @@
                     <dl>
                         <dt><a href="#">家纺</a></dt>
                         <dd>
-                            <a href="#">床品套件</a> <a href="#">被子</a> <a href="#">蚊帐</a> <a href="#">凉席</a> <a
-                                href="#">床单被罩</a> <a href="#">枕芯</a> <a href="#">毛巾浴巾</a> <a href="#">布艺软饰</a>
+                            <a href="#">床品套件</a> <a href="#">被子</a> <a href="#">蚊帐</a> <a href="#">凉席</a> <a href="#">床单被罩</a> <a href="#">枕芯</a> <a href="#">毛巾浴巾</a> <a href="#">布艺软饰</a>
                             <a href="#">毯子</a> <a href="#">抱枕靠垫</a> <a href="#">床垫/床褥</a> <a href="#">窗帘/窗纱</a>
                             <a href="#">电热毯</a>
                         </dd>
@@ -599,10 +590,8 @@
                         <dt><a href="#">女装</a></dt>
                         <dd>
                             <a href="#">连衣裙</a> <a href="#">蕾丝/雪纺衫</a> <a href="#">衬衫</a> <a href="#">T恤</a>
-                            <a href="#">半身裙</a> <a href="#">休闲裤</a> <a href="#">短裤</a> <a href="#">牛仔裤</a> <a
-                                href="#">针织衫</a> <a href="#">吊带/背心</a> <a href="#">打底衫</a> <a href="#">打底裤</a>
-                            <a href="#">正装裤</a> <a href="#">小西服</a> <a href="#">马甲</a> <a href="#">风衣</a> <a
-                                href="#">羊毛衫</a> <a href="#">羊绒衫</a> <a href="#">短外套</a> <a href="#">棉服</a>
+                            <a href="#">半身裙</a> <a href="#">休闲裤</a> <a href="#">短裤</a> <a href="#">牛仔裤</a> <a href="#">针织衫</a> <a href="#">吊带/背心</a> <a href="#">打底衫</a> <a href="#">打底裤</a>
+                            <a href="#">正装裤</a> <a href="#">小西服</a> <a href="#">马甲</a> <a href="#">风衣</a> <a href="#">羊毛衫</a> <a href="#">羊绒衫</a> <a href="#">短外套</a> <a href="#">棉服</a>
                             <a href="#">毛呢大衣</a> <a href="#">加绒裤</a> <a href="#">羽绒服</a> <a href="#">皮草</a>
                             <a href="#">真皮皮衣</a> <a href="#">仿皮皮衣</a> <a href="#">旗袍/唐装</a> <a href="#">礼服</a>
                             <a href="#">婚纱</a> <a href="#">中老年女装</a> <a href="#">大码女装</a> <a href="#">设计师/潮牌</a>
@@ -612,8 +601,7 @@
                         <dt><a href="#">男装</a></dt>
                         <dd>
                             <a href="#">衬衫</a> <a href="#">T恤</a> <a href="#">POLO衫</a> <a href="#">针织衫</a>
-                            <a href="#">夹克</a> <a href="#">卫衣</a> <a href="#">风衣</a> <a href="#">马甲/背心</a> <a
-                                href="#">短裤</a> <a href="#">休闲裤</a> <a href="#">牛仔裤</a> <a href="#">西服</a> <a href="#">
+                            <a href="#">夹克</a> <a href="#">卫衣</a> <a href="#">风衣</a> <a href="#">马甲/背心</a> <a href="#">短裤</a> <a href="#">休闲裤</a> <a href="#">牛仔裤</a> <a href="#">西服</a> <a href="#">
                                     西裤</a> <a href="#">西服套装</a> <a href="#">真皮皮衣</a> <a href="#">仿皮皮衣</a> <a href="#">羽绒服</a>
                             <a href="#">毛呢大衣</a> <a href="#">棉服</a> <a href="#">羊绒衫</a> <a href="#">羊毛衫</a>
                             <a href="#">卫裤/运动裤</a> <a href="#">加绒裤</a> <a href="#">设计师/潮牌</a> <a href="#">唐装/中山装</a>
@@ -707,8 +695,7 @@
                     <dl>
                         <dt><a href="#">时尚女鞋</a></dt>
                         <dd>
-                            <a href="#">凉鞋</a> <a href="#">单鞋</a> <a href="#">高跟鞋</a> <a href="#">坡跟鞋</a> <a
-                                href="#">松糕鞋</a> <a href="#">鱼嘴鞋</a> <a href="#">休闲鞋</a> <a href="#">帆布鞋</a>
+                            <a href="#">凉鞋</a> <a href="#">单鞋</a> <a href="#">高跟鞋</a> <a href="#">坡跟鞋</a> <a href="#">松糕鞋</a> <a href="#">鱼嘴鞋</a> <a href="#">休闲鞋</a> <a href="#">帆布鞋</a>
                             <a href="#">拖鞋/人字拖</a> <a href="#">妈妈鞋</a> <a href="#">防水台</a> <a href="#">雨鞋/雨靴</a>
                             <a href="#">内增高</a> <a href="#">布鞋/绣花鞋</a> <a href="#">女靴</a> <a href="#">雪地靴</a>
                             <a href="#">踝靴</a> <a href="#">马丁靴</a> <a href="#">鞋配件</a>
@@ -778,8 +765,7 @@
                     <dl>
                         <dt><a href="#">运动鞋包</a></dt>
                         <dd>
-                            <a href="#">休闲鞋</a> <a href="#">跑步鞋</a> <a href="#">板鞋</a> <a href="#">帆布鞋</a> <a
-                                href="#">篮球鞋</a> <a href="#">足球鞋</a> <a href="#">乒羽网鞋</a> <a href="#">专项运动鞋</a>
+                            <a href="#">休闲鞋</a> <a href="#">跑步鞋</a> <a href="#">板鞋</a> <a href="#">帆布鞋</a> <a href="#">篮球鞋</a> <a href="#">足球鞋</a> <a href="#">乒羽网鞋</a> <a href="#">专项运动鞋</a>
                             <a href="#">训练鞋</a> <a href="#">拖鞋</a> <a href="#">运动包</a>
                         </dd>
                     </dl>
@@ -809,8 +795,7 @@
                     <dl>
                         <dt><a href="#">体育用品</a></dt>
                         <dd>
-                            <a href="#">乒乓球</a> <a href="#">羽毛球</a> <a href="#">网球</a> <a href="#">篮球</a> <a
-                                href="#">足球</a> <a href="#">高尔夫</a> <a href="#">台球</a> <a href="#">轮滑滑板</a>
+                            <a href="#">乒乓球</a> <a href="#">羽毛球</a> <a href="#">网球</a> <a href="#">篮球</a> <a href="#">足球</a> <a href="#">高尔夫</a> <a href="#">台球</a> <a href="#">轮滑滑板</a>
                             <a href="#">排球</a> <a href="#">棋牌麻将</a> <a href="#">其它</a>
                         </dd>
                     </dl>
@@ -860,8 +845,7 @@
                         <dt><a href="#">维修保养</a></dt>
                         <dd>
                             <a href="#">润滑油</a> <a href="#">添加剂</a> <a href="#">防冻液</a> <a href="#">滤清器</a>
-                            <a href="#">火花塞</a> <a href="#">雨刷</a> <a href="#">车灯</a> <a href="#">后视镜</a> <a
-                                href="#">轮胎</a> <a href="#">轮毂</a> <a href="#">刹车片/盘</a> <a href="#">喇叭/皮带</a>
+                            <a href="#">火花塞</a> <a href="#">雨刷</a> <a href="#">车灯</a> <a href="#">后视镜</a> <a href="#">轮胎</a> <a href="#">轮毂</a> <a href="#">刹车片/盘</a> <a href="#">喇叭/皮带</a>
                             <a href="#">蓄电池</a> <a href="#">底盘装甲/护板</a> <a href="#">贴膜</a> <a href="#">汽修工具</a>
                         </dd>
                     </dl>
@@ -876,15 +860,13 @@
                     <dl>
                         <dt><a href="#">美容清洗</a></dt>
                         <dd>
-                            <a href="#">车蜡</a> <a href="#">补漆笔</a> <a href="#">玻璃水</a> <a href="#">清洁剂</a> <a
-                                href="#">洗车工具</a> <a href="#">洗车配件</a>
+                            <a href="#">车蜡</a> <a href="#">补漆笔</a> <a href="#">玻璃水</a> <a href="#">清洁剂</a> <a href="#">洗车工具</a> <a href="#">洗车配件</a>
                         </dd>
                     </dl>
                     <dl>
                         <dt><a href="#">汽车装饰</a></dt>
                         <dd>
-                            <a href="#">脚垫</a> <a href="#">座垫</a> <a href="#">座套</a> <a href="#">后备箱垫</a> <a
-                                href="#">头枕腰靠</a> <a href="#">香水</a> <a href="#">空气净化</a> <a href="#">车内饰品</a>
+                            <a href="#">脚垫</a> <a href="#">座垫</a> <a href="#">座套</a> <a href="#">后备箱垫</a> <a href="#">头枕腰靠</a> <a href="#">香水</a> <a href="#">空气净化</a> <a href="#">车内饰品</a>
                             <a href="#">功能小件</a> <a href="#">车身装饰件</a> <a href="#">车衣</a>
                         </dd>
                     </dl>
@@ -1083,8 +1065,7 @@
                     <dl>
                         <dt><a href="#">传统滋补</a></dt>
                         <dd>
-                            <a href="#">蜂产品</a> <a href="#">阿胶</a> <a href="#">参类</a> <a href="#">冬虫夏草</a> <a
-                                href="#">燕窝</a> <a href="#">海参</a> <a href="#">养生茶饮</a> <a href="#">鹿茸</a> <a href="#">
+                            <a href="#">蜂产品</a> <a href="#">阿胶</a> <a href="#">参类</a> <a href="#">冬虫夏草</a> <a href="#">燕窝</a> <a href="#">海参</a> <a href="#">养生茶饮</a> <a href="#">鹿茸</a> <a href="#">
                                     灵芝</a> <a href="#">药食同源</a>
                         </dd>
                     </dl>
@@ -1116,4 +1097,5 @@
         </li>
     </ul>
 </body>
+
 </html>
